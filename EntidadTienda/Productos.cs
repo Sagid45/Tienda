@@ -10,6 +10,7 @@ namespace EntidadTienda
     {
         public Productos(int idproducto, string nombre, string descripcion, int precio)
         {
+
             this.idproducto = idproducto;
             this.nombre = nombre;
             this.descripcion = descripcion;

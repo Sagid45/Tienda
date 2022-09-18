@@ -14,6 +14,7 @@ namespace PresentacionTienda
     {
         public frmprincipal()
         {
+            hola
             InitializeComponent();
         }
     }
