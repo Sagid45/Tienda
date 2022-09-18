@@ -13,8 +13,7 @@ namespace PresentacionTienda
     public partial class frmprincipal : Form
     {
         public frmprincipal()
-        {
-            hola
+        {           
             InitializeComponent();
         }
     }
