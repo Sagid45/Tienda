@@ -43,9 +43,9 @@ namespace ManejadorTienda
             tabla.RowTemplate.Height = 30;
             tabla.DataSource =
                 ap.Mostrar(filtro).Tables["producto"];
-            tabla.Columns.Insert(6, g.Boton(
+            tabla.Columns.Insert(4, g.Boton(
                 "Editar", Color.Green));
-            tabla.Columns.Insert(7, g.Boton(
+            tabla.Columns.Insert(5, g.Boton(
                 "Borrar", Color.Red));
             tabla.Columns[0].Visible = false;
         }

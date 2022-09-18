@@ -46,19 +46,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmprincipal.cs">
+    <Compile Include="frmproductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmprincipal.Designer.cs">
-      <DependentUpon>frmprincipal.cs</DependentUpon>
+    <Compile Include="frmproductos.Designer.cs">
+      <DependentUpon>frmproductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductosadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductosadd.Designer.cs">
+      <DependentUpon>frmProductosadd.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmprincipal.resx">
-      <DependentUpon>frmprincipal.cs</DependentUpon>
+    <EmbeddedResource Include="frmproductos.resx">
+      <DependentUpon>frmproductos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmProductosadd.resx">
+      <DependentUpon>frmProductosadd.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatosTienda\AccesoDatosTienda.csproj">
+      <Project>{6c63dfd5-cfbb-4f9c-b953-169cf03bba01}</Project>
+      <Name>AccesoDatosTienda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntidadTienda\EntidadTienda.csproj">
+      <Project>{fa3e0e3f-f8a3-4953-831f-6675b55eaeaa}</Project>
+      <Name>EntidadTienda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManejadorTienda\ManejadorTienda.csproj">
+      <Project>{69cdbb7e-8202-4a2f-a1b6-decb01ddfe47}</Project>
+      <Name>ManejadorTienda</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
